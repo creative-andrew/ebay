@@ -23,8 +23,9 @@ console.log('desde sessionid');
     }}, function(err, res, body) {
     console.log(err)
   });
+  console.log('termino request');
+  res.send('desde session');
 
-console.log('termino request');
 
 
   });
