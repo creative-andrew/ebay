@@ -20,11 +20,12 @@ console.log('desde sessionid');
     "X-EBAY-API-CERT-NAME": "SBX-df6f4b632921-877e-45eb-ac6c-f986",
     "X-EBAY-API-SITEID": 0,
     "X-EBAY-API-COMPATIBILITY-LEVEL": 967
-    }}, function(err, res, body) {
-    console.log(err)
+    }}, function(err, respuesta, body) {
+    res.send(respuesta + err);
+
+ 
   });
-  console.log('termino request');
-  res.send('desde session');
+
 
 
 
